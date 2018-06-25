@@ -12,8 +12,8 @@ body{
     margin-top:20px;
 }
 #grid .in-grid{
-    border:1px solid black;
-    padding: 20px;
+    border:0.5px dashed #ccc;
+    padding: 10px;
     display: inline-block;
     margin:0;
 }
