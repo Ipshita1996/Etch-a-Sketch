@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded',function(e){
     const btn=document.querySelector('#reset');
     const grid=document.querySelector('#grid');
 
+    const bw=document.querySelector('#bw');
+    const color=document.querySelector('#color')
+
     creategrid(16);
     btn.addEventListener('click',function(e){
         //reset function
@@ -17,7 +20,7 @@ document.addEventListener('DOMContentLoaded',function(e){
         }
         
     });
-    
+    //create function
     function creategrid(x){
         console.log('creating');
         for(var j=0;j<x;j++){
@@ -32,12 +35,27 @@ document.addEventListener('DOMContentLoaded',function(e){
                 cell.style.height=size+'px';
                 row.appendChild(cell);
                 cell.addEventListener('mouseover',function(e){
-                    e.target.style.background='black';
+                    if(bw.checked){
+                        e.target.style.background='black';
+                    }
+                    else{
+                        e.target.style.background=getRandomColor();
+                    }
+                    
                 });
             }
             grid.appendChild(row);
         }
     };
+    //colourful ink function
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
     
     
 });
