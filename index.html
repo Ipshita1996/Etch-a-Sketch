@@ -13,13 +13,16 @@
 
         <header>Etch-A-Sketch</header>
         <div id="color-mode">
-            <input type="radio" id="bw" checked name="mode"><label for="bw">Black Ink</label>
-            <input type="radio" id="color" name="mode"><label for="color">Colorful Ink</label>
+            <div><input type="radio" id="bw" checked name="mode"><label for="bw">Black Ink</label></div>
+            <div><input type="radio" id="color" name="mode"><label for="color">Colorful Ink</label></div>
+            <button value="reset" id="reset">RESET</button><br>
         </div>
-        <button value="reset" id="reset">RESET</button><br>
-        <div id="grid"></div>
         
-        <footer>copyrights</footer>
+        <div id="grid"></div>
+        <footer>
+                <p><strong>©Ipshita Chatterjee</strong> | 2018</p>
+                <p id="link">Made for the project that can be found  <a href="https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project" target="_blank">here</a></p>
+        </footer>
     </div>
     
 </body>

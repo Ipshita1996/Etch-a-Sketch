@@ -56,7 +56,5 @@ document.addEventListener('DOMContentLoaded',function(e){
         }
         return color;
       }
-    
-    
 });
 
