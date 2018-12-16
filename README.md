@@ -54,7 +54,7 @@ function creategrid(x){
 
 ```
 ## How to Use?
-Find the board [here](https://ipshita1996.github.io/Etch-a-Sketch/)
+Find the board [here](https://ipshitachatterjee.github.io/Etch-a-Sketch/)
 
 ## Credits
 **©Ipshita Chatterjee | 2018**
